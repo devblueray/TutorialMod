@@ -1,0 +1,51 @@
+package devblueray.tutorialmod.common;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.item.Item;
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
+import devblueray.tutorialmod.blocks.AwesomiumOre;
+import devblueray.tutorialmod.items.NCItems;
+
+
+@Mod(modid = TutorialMod.modid, name = "Tutorial Mod", version = TutorialMod.version)
+
+
+
+public class TutorialMod {
+	
+	public static final String modid = "TutorialMod";
+	public static final String version = "0.0.1-dev";
+	
+	public static CreativeTabs tutorialModTab;
+	
+	public static Item itemAwesomiumIngot;
+	public static Block oreAwesomiumOre;
+	
+	
+	@EventHandler
+	public void PreInit(FMLPreInitializationEvent preEvent){
+		
+		itemAwesomiumIngot = new NCItems().setUnlocalizedName("AwesomiumIngot");
+		GameRegistry.registerItem(itemAwesomiumIngot, "AwesomiumIngot");
+		oreAwesomiumOre = new AwesomiumOre(Material.rock).setBlockName("AwesomiumOre");
+		GameRegistry.registerBlock(oreAwesomiumOre, "AwesomiumOre");
+	}
+	
+	@EventHandler
+	public void Init(FMLInitializationEvent event){
+		
+	}
+	
+	@EventHandler
+	public void PostInit(FMLPostInitializationEvent postEvent){
+		
+	}
+	
+		
+}

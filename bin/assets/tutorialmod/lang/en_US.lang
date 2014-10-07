@@ -1,0 +1,11 @@
+itemGroup.tutorialModTab=Awesomium Mod
+item.AwesomiumIngot.name=Awesomium Ingot
+item.IronWasher.name=Iron Washer
+item.IronDisc.name=Iron Disc
+item.IronHammer.name=Iron Hammer
+item.IronPunch.name=Iron Punch
+item.TinIngot.name=Tin Ingot
+tile.AwesomiumOre.name=Awesomium Ore
+tile.AwesomiumBlock.name=Awesomium Block
+tile.TinOre.name=Tin Ore
+tile.ZincOre.name=Zinc Ore

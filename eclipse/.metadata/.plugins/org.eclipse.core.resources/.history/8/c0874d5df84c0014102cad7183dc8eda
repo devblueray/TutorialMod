@@ -1,0 +1,42 @@
+package devblueray.tutorialmod.common;
+
+import net.minecraft.item.Item;
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
+import devblueray.tutorialmod.items.NCItems;
+
+
+@Mod(modid = TutorialMod.modid, name = "Tutorial Mod", version = TutorialMod.version)
+
+
+public class TutorialMod {
+	
+	public static final String modid = "TutorialMod";
+	public static final String version = "0.0.1-dev";
+	
+	public static Item itemCopperIngot;
+	
+	@EventHandler
+	public void PreInit(FMLPreInitializationEvent preEvent){
+		
+		itemCopperIngot = new NCItems().setUnlocalizedName("CopperIngot");
+		GameRegistry.registerItem(itemCopperIngot, "CopperIngot");
+		
+	}
+	
+	@EventHandler
+	public void Init(FMLInitializationEvent event){
+		
+	}
+	
+	@EventHandler
+	public void PostInit(FMLPostInitializationEvent postEvent){
+		
+	}
+	
+		
+}

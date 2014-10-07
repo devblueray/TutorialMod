@@ -1,0 +1,13 @@
+package devblueray.tutorialmod.common;
+
+import cpw.mods.fml.common.Mod;
+
+
+@Mod(modid = "TutorialMod", name = "Tutorial Mod", version = "0.0.1-dev")
+
+public class TutorialMod {
+	public TutorialMod() {
+		
+	}
+		
+}

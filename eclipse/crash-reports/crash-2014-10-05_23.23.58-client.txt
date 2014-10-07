@@ -1,0 +1,77 @@
+---- Minecraft Crash Report ----
+// There are four lights!
+
+Time: 10/5/14 11:23 PM
+Description: There was a severe problem during mod loading that has caused the game to fail
+
+cpw.mods.fml.common.LoaderException: java.lang.IllegalArgumentException: value already present: null
+	at cpw.mods.fml.common.registry.GameRegistry.registerBlock(GameRegistry.java:203)
+	at cpw.mods.fml.common.registry.GameRegistry.registerBlock(GameRegistry.java:160)
+	at cpw.mods.fml.common.registry.GameRegistry.registerBlock(GameRegistry.java:150)
+	at devblueray.tutorialmod.common.TutorialMod.PreInit(TutorialMod.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at cpw.mods.fml.common.FMLModContainer.handleModStateEvent(FMLModContainer.java:536)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.EventHandler.handleEvent(EventHandler.java:74)
+	at com.google.common.eventbus.SynchronizedEventHandler.handleEvent(SynchronizedEventHandler.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:314)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:296)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:267)
+	at cpw.mods.fml.common.LoadController.sendEventToModContainer(LoadController.java:209)
+	at cpw.mods.fml.common.LoadController.propogateStateMessage(LoadController.java:188)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.EventHandler.handleEvent(EventHandler.java:74)
+	at com.google.common.eventbus.SynchronizedEventHandler.handleEvent(SynchronizedEventHandler.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:314)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:296)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:267)
+	at cpw.mods.fml.common.LoadController.distributeStateMessage(LoadController.java:119)
+	at cpw.mods.fml.common.Loader.loadMods(Loader.java:498)
+	at cpw.mods.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:194)
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:561)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:931)
+	at net.minecraft.client.main.Main.main(Main.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+Caused by: java.lang.IllegalArgumentException: value already present: null
+	at com.google.common.collect.HashBiMap.put(HashBiMap.java:237)
+	at com.google.common.collect.HashBiMap.put(HashBiMap.java:214)
+	at net.minecraft.util.RegistrySimple.putObject(RegistrySimple.java:42)
+	at net.minecraft.util.RegistryNamespaced.addObject(RegistryNamespaced.java:28)
+	at cpw.mods.fml.common.registry.FMLControlledNamespacedRegistry.add(FMLControlledNamespacedRegistry.java:182)
+	at cpw.mods.fml.common.registry.GameData.registerBlockAndItem(GameData.java:169)
+	at cpw.mods.fml.common.registry.GameRegistry.registerBlock(GameRegistry.java:192)
+	... 40 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.2
+	Operating System: Windows 7 (amd64) version 6.1
+	Java Version: 1.7.0_51, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 861425320 bytes (821 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.01-pre FML v7.2.116.1024 Minecraft Forge 10.12.0.1024 4 mods loaded, 4 mods active
+	mcp{8.09} [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed->Pre-initialized
+	FML{7.2.116.1024} [Forge Mod Loader] (forgeSrc-1.7.2-10.12.0.1024.jar) Unloaded->Constructed->Pre-initialized
+	Forge{10.12.0.1024} [Minecraft Forge] (forgeSrc-1.7.2-10.12.0.1024.jar) Unloaded->Constructed->Pre-initialized
+	TutorialMod{0.0.1-dev} [Tutorial Mod] (bin) Unloaded->Constructed->Errored
