@@ -6,7 +6,9 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
+import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.oredict.OreDictionary;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
@@ -24,6 +26,11 @@ import devblueray.tutorialmod.handler.FuelHandler;
 import devblueray.tutorialmod.items.IronHammer;
 import devblueray.tutorialmod.items.IronPunch;
 import devblueray.tutorialmod.items.NCItems;
+import devblueray.tutorialmod.items.TopazAxe;
+import devblueray.tutorialmod.items.TopazHoe;
+import devblueray.tutorialmod.items.TopazPickaxe;
+import devblueray.tutorialmod.items.TopazShovel;
+import devblueray.tutorialmod.items.TopazSword;
 import devblueray.tutorialmod.worldgen.TutorialModWorldGen;
 
 
@@ -40,6 +47,7 @@ public class TutorialMod {
 	
 	public static CreativeTabs tutorialModTab;
 	
+public static ToolMaterial TopazMaterial = EnumHelper.addToolMaterial("TopazMaterial", 2, 750, 10.0F, 5.0F, 10); 
 	public static Item itemAwesomiumIngot;
 	public static Item itemTinIngot;
 	public static Item itemTinCog;
@@ -51,8 +59,18 @@ public class TutorialMod {
 	public static Block oreAwesomiumOre;
 	public static Block oreTinOre;
 	public static Block oreZincOre;
-	
+	public static Block oreTopazOre;
 	public static Block blockAwesomiumBlock;
+	
+	public static Item itemTopaz;
+	public static Item itemTopazSword;
+	public static Item itemTopazAxe;
+	public static Item itemTopazShovel;
+	public static Item itemTopazHoe;
+	public static Item itemTopazPickaxe;
+	
+	
+	
 	
 	@EventHandler
 	public void PreInit(FMLPreInitializationEvent preEvent){
@@ -75,13 +93,18 @@ public class TutorialMod {
 		itemIronDisc = new NCItems().setUnlocalizedName("IronDisc");
 		itemIronHammer = new IronHammer().setUnlocalizedName("IronHammer");
 		itemIronPunch = new IronPunch().setUnlocalizedName("IronPunch");
-		
+		itemTopazSword = new TopazSword(TopazMaterial).setUnlocalizedName("TopazSword");
+		itemTopazAxe = new TopazAxe(TopazMaterial).setUnlocalizedName("TopazAxe");
+		itemTopazShovel = new TopazShovel(TopazMaterial).setUnlocalizedName("TopazShovel");
+		itemTopazPickaxe = new TopazPickaxe(TopazMaterial).setUnlocalizedName("TopazPickaxe");
+		itemTopazHoe = new TopazHoe(TopazMaterial).setUnlocalizedName("TopazHoe");
+		itemTopaz = new NCItems().setUnlocalizedName("Topaz"); 
 		
 		//Ores
 		oreAwesomiumOre = new OreBlock(Material.rock).setBlockName("AwesomiumOre");
 		oreTinOre = new OreBlock(Material.rock).setBlockName("TinOre");
 		oreZincOre = new OreBlock(Material.rock).setBlockName("ZincOre");
-		
+		oreTopazOre = new OreBlock(Material.rock).setBlockName("TopazOre");
 		//Blocks
 		blockAwesomiumBlock = new AwesomiumBlock(Material.iron).setBlockName("AwesomiumBlock");
 		
@@ -100,6 +123,12 @@ public class TutorialMod {
 		GameRegistry.registerItem(itemIronDisc, "IronDisc");
 		GameRegistry.registerItem(itemIronHammer, "IronHammer");
 		GameRegistry.registerItem(itemIronPunch, "IronPunch");
+		GameRegistry.registerItem(itemTopazPickaxe, "TopazPickaxe");
+		GameRegistry.registerItem(itemTopazHoe, "TopazHoe");
+		GameRegistry.registerItem(itemTopazShovel, "TopazShovel");
+		GameRegistry.registerItem(itemTopazAxe, "TopazAxe");
+		GameRegistry.registerItem(itemTopazSword, "TopazSword");
+		GameRegistry.registerItem(itemTopaz, "Topaz");
 		
 		//Blocks
 		GameRegistry.registerBlock(blockAwesomiumBlock, "AwesomiumBlock");
@@ -108,6 +137,7 @@ public class TutorialMod {
 		GameRegistry.registerBlock(oreAwesomiumOre, "AwesomiumOre");
 		GameRegistry.registerBlock(oreTinOre, "TinOre");
 		GameRegistry.registerBlock(oreZincOre, "ZincOre");
+		GameRegistry.registerBlock(oreTopazOre, "TopazOre");
 		
 		//WorldGen
 		GameRegistry.registerWorldGenerator(eventWorldGen, 0);

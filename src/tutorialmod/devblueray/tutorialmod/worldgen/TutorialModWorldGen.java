@@ -47,6 +47,7 @@ public class TutorialModWorldGen implements IWorldGenerator {
 		this.addOreSpawn(TutorialMod.oreAwesomiumOre, world, random, blockXPos, blockZPos, 16, 16, 4+random.nextInt(6),25, 38, 100);
 		this.addOreSpawn(TutorialMod.oreTinOre, world, random, blockXPos, blockZPos, 16, 16, 4+random.nextInt(6),25, 38, 100);
 		this.addOreSpawn(TutorialMod.oreZincOre, world, random, blockXPos, blockZPos, 16, 16, 4+random.nextInt(6),25, 38, 100);
+		this.addOreSpawn(TutorialMod.oreTopazOre, world, random, blockXPos, blockZPos, 16, 16, 4+random.nextInt(6),25, 38, 100);
 	}
 
 	private void addOreSpawn(Block block, World world, Random random, int blockXPos, int blockZPos, int maxX, int maxZ, int maxVeinSize, int chanceToSpawn, int minY, int maxY) {

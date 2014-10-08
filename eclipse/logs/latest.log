@@ -1,29 +1,67 @@
-[20:10:24] [main/INFO]: Setting user: Player987
-[20:10:25] [Client thread/INFO]: LWJGL Version: 2.9.0
-[20:10:27] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Tutorial Mod
-[20:10:28] [Sound Library Loader/INFO]: Sound engine started
-[20:10:29] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[20:10:29] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[20:10:30] [MCO Availability Checker #1/ERROR]: Couldn't connect to Realms
-[20:10:35] [Server thread/INFO]: Starting integrated minecraft server version 1.7.2
-[20:10:35] [Server thread/INFO]: Generating keypair
-[20:10:35] [Server thread/INFO]: Preparing start region for level 0
-[20:10:37] [Server thread/INFO]: Player987[local:E:aea3949b] logged in with entity id 252 at (217.61318044318188, 86.0, 230.6829240091931)
-[20:10:37] [Server thread/INFO]: Player987 joined the game
-[20:11:11] [Server thread/INFO]: Saving and pausing game...
-[20:11:11] [Server thread/INFO]: Saving chunks for level 'Copy of Generated Ores'/Overworld
-[20:11:11] [Server thread/INFO]: Saving chunks for level 'Copy of Generated Ores'/Nether
-[20:11:11] [Server thread/INFO]: Saving chunks for level 'Copy of Generated Ores'/The End
-[20:11:14] [Server thread/INFO]: Player987 has just earned the achievement [Taking Inventory]
-[20:11:14] [Client thread/INFO]: [CHAT] Player987 has just earned the achievement [Taking Inventory]
-[20:13:13] [Server thread/INFO]: [Player987: Cleared the inventory of Player987, removing 349 items]
-[20:13:13] [Client thread/INFO]: [CHAT] Cleared the inventory of Player987, removing 349 items
-[20:37:01] [Client thread/INFO]: Stopping!
-[20:37:01] [Server thread/INFO]: Stopping server
-[20:37:01] [Server thread/INFO]: Saving players
-[20:37:01] [Server thread/INFO]: Saving worlds
-[20:37:01] [Server thread/INFO]: Saving chunks for level 'Copy of Generated Ores'/Overworld
-[20:37:01] [Server thread/INFO]: Saving chunks for level 'Copy of Generated Ores'/Nether
-[20:37:01] [Server thread/INFO]: Saving chunks for level 'Copy of Generated Ores'/The End
-[20:37:01] [Client Shutdown Thread/INFO]: Stopping server
-[20:37:01] [Client Shutdown Thread/INFO]: Saving players
+[20:19:58] [main/INFO]: Setting user: Player579
+[20:19:59] [Client thread/INFO]: LWJGL Version: 2.9.0
+[20:20:02] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Tutorial Mod
+[20:20:03] [Client thread/ERROR]: Using missing texture, unable to load tutorialmod:textures/blocks/TopazOre.png
+java.io.FileNotFoundException: tutorialmod:textures/blocks/TopazOre.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:128) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTexture(TextureMap.java:93) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTickableTexture(TextureManager.java:71) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTextureMap(TextureManager.java:58) [TextureManager.class:?]
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:620) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:931) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:112) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.7.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.7.0_51]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.7.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
+[20:20:03] [Sound Library Loader/INFO]: Sound engine started
+[20:20:03] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[20:20:03] [Client thread/ERROR]: Using missing texture, unable to load tutorialmod:textures/items/Topaz.png
+java.io.FileNotFoundException: tutorialmod:textures/items/Topaz.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:128) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTexture(TextureMap.java:93) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTickableTexture(TextureManager.java:71) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTextureMap(TextureManager.java:58) [TextureManager.class:?]
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:621) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:931) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:112) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.7.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.7.0_51]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.7.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
+[20:20:03] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[20:20:04] [MCO Availability Checker #1/ERROR]: Couldn't connect to Realms
+[20:20:08] [Server thread/INFO]: Starting integrated minecraft server version 1.7.2
+[20:20:08] [Server thread/INFO]: Generating keypair
+[20:20:08] [Server thread/INFO]: Preparing start region for level 0
+[20:20:09] [Server thread/INFO]: Player579[local:E:12862467] logged in with entity id 373 at (-216.25832777361333, 105.0, 330.80197278982837)
+[20:20:09] [Server thread/INFO]: Player579 joined the game
+[20:20:15] [Server thread/INFO]: [Player579: Set own game mode to Adventure Mode]
+[20:20:15] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[20:20:34] [Server thread/INFO]: Player579 has just earned the achievement [Taking Inventory]
+[20:20:34] [Client thread/INFO]: [CHAT] Player579 has just earned the achievement [Taking Inventory]
+[20:21:09] [Server thread/INFO]: Saving and pausing game...
+[20:21:09] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[20:21:09] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[20:21:09] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[20:21:41] [Server thread/INFO]: Saving and pausing game...
+[20:21:41] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[20:21:41] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[20:21:41] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[20:21:41] [Server thread/INFO]: Stopping server
+[20:21:41] [Server thread/INFO]: Saving players
+[20:21:41] [Server thread/INFO]: Saving worlds
+[20:21:41] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[20:21:41] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[20:21:41] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[20:21:43] [Client thread/INFO]: Stopping!

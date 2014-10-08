@@ -1,0 +1,14 @@
+eclipse
+.gradle
+.project
+.settings
+bin
+build
+build.gradle
+forge-1.7.2-10.12.0.1024-changelog.txt
+gradle
+gradlew
+gradlew.bat
+License-fml.txt
+MinecraftForge-*
+README.txt

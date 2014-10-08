@@ -5,7 +5,15 @@ item.IronDisc.name=Iron Disc
 item.IronHammer.name=Iron Hammer
 item.IronPunch.name=Iron Punch
 item.TinIngot.name=Tin Ingot
+item.TopazSword.name=Topaz Sword
+item.TopazHoe.name=Topaz Hoe
+item.TopazPickaxe.name=Topaz Pickaxe
+item.TopazAxe.name=Topaz Axe
+item.TopazShovel.name=Topaz Shovel
+item.Topaz.name=Topaz
 tile.AwesomiumOre.name=Awesomium Ore
 tile.AwesomiumBlock.name=Awesomium Block
 tile.TinOre.name=Tin Ore
 tile.ZincOre.name=Zinc Ore
+tile.TopazOre.name=Topaz Ore
+
